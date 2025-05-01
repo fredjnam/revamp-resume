@@ -1,35 +1,36 @@
-ResumeRevamp - AI-Powered Resume Enhancement Platform
-ResumeRevamp is a comprehensive web application designed to help job seekers improve their resumes through AI-powered analysis, expert recruiter suggestions, and job-specific tailoring.
-Features
-AI Resume Analysis
+# ResumeRevamp - AI-Powered Resume Enhancement Platform
+## ResumeRevamp is a comprehensive web application designed to help job seekers improve their resumes through AI-powered analysis, expert recruiter suggestions, and job-specific tailoring.
+
+## Features
+### AI Resume Analysis
 
 Upload resumes in various formats (PDF, DOCX, TXT)
 Get detailed AI feedback on resume structure, content, and ATS optimization
 Receive personalized improvement suggestions
 Download complete analysis reports
 
-Expert Recruiter Suggestions
+### Expert Recruiter Suggestions
 
 Access professional insights from experienced recruiters
 Learn industry-specific best practices
 Understand common resume mistakes to avoid
 Review before & after examples
 
-Job Description Tailoring
+### Job Description Tailoring
 
 Match resumes to specific job descriptions
 Identify missing keywords and skills
 Get customized bullet point suggestions
 Optimize for applicant tracking systems
 
-User Dashboard (Premium Feature)
+### User Dashboard (Premium Feature)
 
 Track resume improvements over time
 Store multiple resume versions
 Compare job match scores across positions
 Set improvement goals
 
-Technology Stack
+### Technology Stack
 
 Frontend: React.js with Tailwind CSS
 AI Integration: OpenAI API (GPT-4)
@@ -37,14 +38,14 @@ Document Parsing: PDF.js, Mammoth.js
 Authentication: [To be implemented]
 Database: [To be implemented]
 
-Getting Started
+### Getting Started
 Prerequisites
 
 Node.js (v14+)
 npm or yarn
 OpenAI API key for AI analysis features
 
-Installation
+## Installation
 
 Clone the repository
 
