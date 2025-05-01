@@ -1,108 +1,70 @@
-# ResumeRevamp - AI-Powered Resume Enhancement Platform
+# Getting Started with Create React App
 
-### ResumeRevamp is a comprehensive web application designed to help job seekers improve their resumes through AI-powered analysis, expert recruiter suggestions, and job-specific tailoring.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Features
-### AI Resume Analysis
+## Available Scripts
 
-Upload resumes in various formats (PDF, DOCX, TXT)
-Get detailed AI feedback on resume structure, content, and ATS optimization
-Receive personalized improvement suggestions
-Download complete analysis reports
+In the project directory, you can run:
 
-### Expert Recruiter Suggestions
+### `npm start`
 
-Access professional insights from experienced recruiters
-Learn industry-specific best practices
-Understand common resume mistakes to avoid
-Review before & after examples
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-### Job Description Tailoring
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-Match resumes to specific job descriptions
-Identify missing keywords and skills
-Get customized bullet point suggestions
-Optimize for applicant tracking systems
+### `npm test`
 
-### User Dashboard (Premium Feature)
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-Track resume improvements over time
-Store multiple resume versions
-Compare job match scores across positions
-Set improvement goals
+### `npm run build`
 
-### Technology Stack
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Frontend: React.js with Tailwind CSS
-AI Integration: OpenAI API (GPT-4)
-Document Parsing: PDF.js, Mammoth.js
-Authentication: [To be implemented]
-Database: [To be implemented]
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-### Getting Started
-Prerequisites
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-Node.js (v14+)
-npm or yarn
-OpenAI API key for AI analysis features
+### `npm run eject`
 
-## Installation
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-### Clone the repository
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-bashgit clone https://github.com/yourusername/resume-revamp.git
-cd resume-revamp
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-### Install dependencies
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-bashnpm install
+## Learn More
 
-Create a .env file in the root directory with your OpenAI API key
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-REACT_APP_OPENAI_API_KEY=your_api_key_here
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-Start the development server
+### Code Splitting
 
-bashnpm start
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-Open your browser and navigate to http://localhost:3000
+### Analyzing the Bundle Size
 
-## Implementation Plan
-### Phase 1: Core Features
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-Homepage with key value propositions
-Resume upload and parsing functionality
-Basic AI analysis implementation
-Expert suggestions content
+### Making a Progressive Web App
 
-### Phase 2: Enhanced Features
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-Job description tailoring
-User accounts and authentication
-Dashboard for tracking progress
-Freemium model implementation
+### Advanced Configuration
 
-### Phase 3: Advanced Features
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-Advanced resume statistics and comparisons
-Interview preparation suggestions
-LinkedIn profile optimization
-Mobile app development
+### Deployment
 
-Customizing Expert Content
-To add your personal recruiting expertise to the platform:
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-Navigate to src/data/expertSuggestions.js
-Update the content with your own insights, following the template structure
-Add any industry-specific advice you have from your recruiting experience
-Include real-world examples (anonymized) to illustrate your points
+### `npm run build` fails to minify
 
-API Integration
-The platform uses OpenAI's GPT-4 for resume analysis and job tailoring. To customize the prompts:
-
-Check the src/utils/api-integration.js file
-Modify the createResumeAnalysisPrompt and createJobMatchPrompt functions
-Adjust the parameters to focus on aspects most important to your recruiting philosophy
-
-### License
-This project is licensed under the MIT License - see the LICENSE file for details.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
