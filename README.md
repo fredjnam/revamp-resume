@@ -47,12 +47,12 @@ OpenAI API key for AI analysis features
 
 ## Installation
 
-Clone the repository
+### Clone the repository
 
 bashgit clone https://github.com/yourusername/resume-revamp.git
 cd resume-revamp
 
-Install dependencies
+### Install dependencies
 
 bashnpm install
 
@@ -66,43 +66,22 @@ bashnpm start
 
 Open your browser and navigate to http://localhost:3000
 
-Project Structure
-resume-revamp/
-├── public/
-├── src/
-│   ├── components/
-│   │   ├── Navigation.js
-│   │   ├── Footer.js
-│   │   ├── ResumeAnalysis.js
-│   │   ├── JobTailoring.js
-│   │   ├── ExpertSuggestions.js
-│   │   └── ... 
-│   ├── utils/
-│   │   ├── api-integration.js
-│   │   ├── pdf-parser.js
-│   │   └── ...
-│   ├── contexts/
-│   ├── pages/
-│   ├── App.js
-│   └── index.js
-├── package.json
-└── README.md
-Implementation Plan
-Phase 1: Core Features
+## Implementation Plan
+### Phase 1: Core Features
 
 Homepage with key value propositions
 Resume upload and parsing functionality
 Basic AI analysis implementation
 Expert suggestions content
 
-Phase 2: Enhanced Features
+### Phase 2: Enhanced Features
 
 Job description tailoring
 User accounts and authentication
 Dashboard for tracking progress
 Freemium model implementation
 
-Phase 3: Advanced Features
+### Phase 3: Advanced Features
 
 Advanced resume statistics and comparisons
 Interview preparation suggestions
@@ -124,46 +103,5 @@ Check the src/utils/api-integration.js file
 Modify the createResumeAnalysisPrompt and createJobMatchPrompt functions
 Adjust the parameters to focus on aspects most important to your recruiting philosophy
 
-Deployment
-Netlify
-bashnpm run build
-netlify deploy
-Vercel
-bashnpm run build
-vercel
-Business Model
-ResumeRevamp uses a freemium model:
-Free Tier
-
-Basic resume analysis
-Limited expert suggestions
-1 job description analysis per month
-
-Premium Tier ($14.99/month)
-
-Advanced resume analysis
-Complete expert suggestions library
-10 job description analyses per month
-Resume version history
-Email support
-
-Professional Tier ($29.99/month)
-
-All Premium features
-Unlimited job description analyses
-1-on-1 consultation with recruiter
-LinkedIn profile optimization
-Custom resume templates
-Priority support
-
-Contributing
-If you'd like to contribute to this project, please:
-
-Fork the repository
-Create a feature branch (git checkout -b feature/amazing-feature)
-Commit your changes (git commit -m 'Add some amazing feature')
-Push to the branch (git push origin feature/amazing-feature)
-Open a Pull Request
-
-License
+### License
 This project is licensed under the MIT License - see the LICENSE file for details.
