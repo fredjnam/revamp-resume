@@ -1,5 +1,6 @@
 # ResumeRevamp - AI-Powered Resume Enhancement Platform
-## ResumeRevamp is a comprehensive web application designed to help job seekers improve their resumes through AI-powered analysis, expert recruiter suggestions, and job-specific tailoring.
+
+### ResumeRevamp is a comprehensive web application designed to help job seekers improve their resumes through AI-powered analysis, expert recruiter suggestions, and job-specific tailoring.
 
 ## Features
 ### AI Resume Analysis
