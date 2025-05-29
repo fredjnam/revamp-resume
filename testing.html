@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Tabbed Page - B2B Software Look</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    </head>
+<body class="font-sans"> <div class="container mx-auto p-4 sm:p-6 lg:p-8">
+        <header class="mb-8 text-center">
+            <h1 class="text-3xl sm:text-4xl font-bold">Resume Revamp Track</h1>
+        </header>
+
+        <div class="tab-button-container"> <button
+                class="tab-button active" onclick="openTab(event, 'Tab1')"
+                aria-selected="true"
+                role="tab"
+                id="tab-button-1"
+                aria-controls="Tab1"
+            >
+                Quick Personal Tips
+            </button>
+            <button
+                class="tab-button" onclick="openTab(event, 'Tab2')"
+                aria-selected="false"
+                role="tab"
+                id="tab-button-2"
+                aria-controls="Tab2"
+            >
+                AI Helper
+            </button>
+        </div>
+
+        <div class="tab-content-area"> <div id="Tab1" class="tab-content active" role="tabpanel" aria-labelledby="tab-button-1">
+                <h2 class="text-2xl font-semibold mb-4">Tailoring and Editing Your Resume</h2>
+                <p class="leading-relaxed">
+                    This is the content for the first tab. You can place any HTML elements you need here, such as text, images, lists, or forms.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <img src="https://placehold.co/600x300/E2E8F0/4A5568?text=Tab+1+Image" alt="Placeholder Image for Tab 1" class="mt-4 rounded-lg shadow-sm w-full max-w-md mx-auto h-auto" onerror="this.onerror=null;this.src='https://placehold.co/600x300/E2E8F0/4A5568?text=Image+Not+Found';">
+            </div>
+
+            <div id="Tab2" class="tab-content" role="tabpanel" aria-labelledby="tab-button-2">
+                <h2 class="text-2xl font-semibold mb-4">Content for Tab 2</h2>
+                <p class="leading-relaxed">
+                    This is the content for the second tab. It's different from the first one.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                 <ul class="list-disc list-inside mt-4 space-y-1">
+                    <li>List Item A for Tab 2</li>
+                    <li>List Item B for Tab 2</li>
+                    <li>List Item C for Tab 2</li>
+                </ul>
+                 <img src="https://placehold.co/600x300/D1FAE5/065F46?text=Tab+2+Image" alt="Placeholder Image for Tab 2" class="mt-4 rounded-lg shadow-sm w-full max-w-md mx-auto h-auto" onerror="this.onerror=null;this.src='https://placehold.co/600x300/D1FAE5/065F46?text=Image+Not+Found';">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Function to switch between tabs
+        function openTab(event, tabName) {
+            const tabContents = document.querySelectorAll(".tab-content");
+            tabContents.forEach(content => {
+                content.classList.remove("active");
+                // content.style.display = "none"; // CSS now handles display based on .active class
+            });
+
+            const tabButtons = document.querySelectorAll(".tab-button");
+            tabButtons.forEach(button => {
+                button.classList.remove("active");
+                button.setAttribute("aria-selected", "false");
+            });
+
+            const currentTabContent = document.getElementById(tabName);
+            if (currentTabContent) {
+                // currentTabContent.style.display = "block"; // CSS now handles display
+                currentTabContent.classList.add("active");
+            }
+
+            if (event.currentTarget) {
+                event.currentTarget.classList.add("active");
+                event.currentTarget.setAttribute("aria-selected", "true");
+            }
+        }
+
+        // Optional: Initial active state is set by HTML class and CSS rules.
+        // The JS primarily handles changes.
+    </script>
+
+</body>
+</html>

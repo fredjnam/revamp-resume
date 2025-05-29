@@ -1,0 +1,112 @@
+/* styles.css */
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(to bottom right, #F0F4F8, #E5E9F2); /* Subtle gradient background for a polished look */
+    color: #374151; /* Tailwind gray-700 equivalent - for body text */
+    line-height: 1.6;
+    margin: 0; /* Ensure no default browser margin */
+}
+
+.container {
+    max-width: 960px; /* Adjust as needed for your preferred content width */
+}
+
+/* Header Styling */
+header h1 {
+    color: #1E3A8A; /* Dark, corporate blue (Tailwind blue-800) */
+    font-weight: 700; /* Bolder for emphasis */
+    /* text-shadow: 1px 1px 2px rgba(0,0,0,0.05); /* Optional: very subtle text shadow */
+}
+
+/* Tab Button Container - for a more structured look */
+.tab-button-container {
+    display: flex;
+    background: #FFFFFF; /* White background for the tab bar */
+    border-bottom: 2px solid #D1D5DB; /* Light gray border (Tailwind gray-300) */
+    border-radius: 8px 8px 0 0; /* Rounded top corners */
+    overflow: hidden; /* Ensures child elements conform to rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+}
+
+/* Tab Buttons Styling */
+.tab-button {
+    flex: 1; /* Distribute space equally */
+    padding: 1rem 1.5rem; /* Generous padding for a modern feel */
+    text-align: center;
+    font-weight: 500; /* Medium font weight */
+    color: #4B5563; /* Muted text color for inactive tabs (Tailwind gray-600) */
+    background-color: #F9FAFB; /* Very light gray for inactive tabs (Tailwind gray-50) */
+    border: none; /* Remove default button border */
+    border-bottom: 3px solid transparent; /* Space for active indicator */
+    transition: all 0.3s ease-in-out; /* Smooth transitions for hover and active states */
+    cursor: pointer;
+}
+
+.tab-button:hover,
+.tab-button:focus {
+    background-color: #F3F4F6; /* Slightly darker on hover (Tailwind gray-100) */
+    color: #1E3A8A; /* Corporate blue text on hover */
+}
+
+.tab-button.active {
+    color: #FFFFFF; /* White text for active tab */
+    font-weight: 600; /* Bolder text for active tab */
+    background: linear-gradient(to right, #3B82F6, #1E40AF); /* Vibrant blue gradient for active tab */
+    border-bottom-color: #1E40AF; /* Darker blue underline for emphasis */
+    box-shadow: inset 0 -2px 4px rgba(0,0,0,0.1); /* Inner shadow for a slight press effect */
+}
+
+/* Tab Content Area - the main panel */
+.tab-content-area {
+    background: #FFFFFF; /* Clean white background for content */
+    padding: 2rem; /* Ample padding inside the content area */
+    border-radius: 0 0 8px 8px; /* Rounded bottom corners, matching tab container */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* More pronounced shadow for the content panel */
+    min-height: 250px; /* Ensure it has some height */
+}
+
+.tab-content {
+    display: none; /* Hidden by default - JS will make it active */
+}
+
+.tab-content.active {
+    display: block; /* Shown when active */
+    animation: fadeIn 0.5s ease-in-out; /* Subtle fade-in animation for content */
+}
+
+/* Keyframes for fadeIn animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Content specific styling within tabs */
+.tab-content h2 {
+    color: #1E40AF; /* Matching blue for headings within tabs (Tailwind blue-700) */
+    margin-bottom: 1rem; /* Space below headings */
+}
+
+.tab-content p,
+.tab-content ul {
+    color: #4B5563; /* Consistent text color for paragraphs and lists */
+    margin-bottom: 1rem;
+}
+
+.tab-content ul {
+    list-style-position: inside;
+    padding-left: 0.5rem; /* Indent list items slightly */
+}
+
+.tab-content img {
+    margin-top: 1.5rem; /* Space above images */
+    border-radius: 8px; /* Rounded corners for images */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for images */
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto;
+}
+
+/* Accessibility: Clear focus state for keyboard navigation */
+.tab-button:focus-visible {
+    outline: 2px solid #2563EB; /* Blue outline (Tailwind blue-600) */
+    outline-offset: 2px;
+}
