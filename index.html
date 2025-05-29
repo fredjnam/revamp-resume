@@ -7,90 +7,170 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Resume Revamp Track</h1>
-        </header>
+    <!-- Vercel-style Navigation Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="#home" class="logo">Resume Revamp Track</a>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#ai-assistance" class="nav-link">AI Assistance</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <div class="tab-container">
-            <div class="tab-nav">
-                <button
-                    class="tab-button active"
-                    onclick="openTab(event, 'Tab1')"
-                    aria-selected="true"
-                    role="tab"
-                    id="tab-button-1"
-                    aria-controls="Tab1"
-                >
-                    Home
-                </button>
-                <button
-                    class="tab-button"
-                    onclick="openTab(event, 'Tab2')"
-                    aria-selected="false"
-                    role="tab"
-                    id="tab-button-2"
-                    aria-controls="Tab2"
-                >
-                    AI assistance
-                </button>
-            </div>
-
-            <div class="tab-content-container">
-                <div id="Tab1" class="tab-content active" role="tabpanel" aria-labelledby="tab-button-1">
-                    <h2 class="text-2xl font-semibold text-gray-700 mb-4">Tailoring and Editing Your Resume</h2>
-                    <p class="text-gray-600 leading-relaxed">
-                        This is the content for the first tab. You can place any HTML elements you need here, such as text, images, lists, or forms.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    </p>
-                    <img src="https://placehold.co/600x300/E2E8F0/4A5568?text=Tab+1+Image" alt="Placeholder Image for Tab 1" class="mt-4 rounded-lg shadow-sm w-full max-w-md mx-auto h-auto" onerror="this.onerror=null;this.src='https://placehold.co/600x300/E2E8F0/4A5568?text=Image+Not+Found';">
-                </div>
-
-                <div id="Tab2" class="tab-content" role="tabpanel" aria-labelledby="tab-button-2">
-                    <h2 class="text-2xl font-semibold text-gray-700 mb-4">Content for Tab 2</h2>
-                    <p class="text-gray-600 leading-relaxed">
-                        This is the content for the second tab. It's different from the first one.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    </p>
-                    <ul class="list-disc list-inside mt-4 text-gray-600 space-y-1">
-                        <li>List Item A for Tab 2</li>
-                        <li>List Item B for Tab 2</li>
-                        <li>List Item C for Tab 2</li>
-                    </ul>
-                     <img src="https://placehold.co/600x300/D1FAE5/065F46?text=Tab+2+Image" alt="Placeholder Image for Tab 2" class="mt-4 rounded-lg shadow-sm w-full max-w-md mx-auto h-auto" onerror="this.onerror=null;this.src='https://placehold.co/600x300/D1FAE5/065F46?text=Image+Not+Found';">
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <h1 class="fade-in-up">Resume Revamp Track</h1>
+                <p class="fade-in-up">Transform your resume with AI-powered tools and expert guidance. Create professional documents that get you noticed and land your dream job.</p>
+                <div class="flex items-center justify-center gap-4">
+                    <a href="#ai-assistance" class="btn btn-primary">Get Started</a>
+                    <a href="#features" class="btn btn-secondary">Learn More</a>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features">
+            <div class="container">
+                <h2 class="section-heading">Everything You Need</h2>
+                <p class="section-subtitle">Our comprehensive platform provides all the tools and guidance you need to create standout resumes.</p>
+                
+                <div class="features-grid">
+                    <div class="feature-card fade-in-up">
+                        <h3>Smart Templates</h3>
+                        <p>Choose from professionally designed templates that are optimized for applicant tracking systems (ATS) and human reviewers alike. Our templates are crafted by industry experts.</p>
+                    </div>
+                    
+                    <div class="feature-card fade-in-up">
+                        <h3>Industry Insights</h3>
+                        <p>Get tailored advice based on your industry and career level, with examples from successful professionals in your field. Learn what recruiters are looking for.</p>
+                    </div>
+                    
+                    <div class="feature-card fade-in-up">
+                        <h3>Real-time Feedback</h3>
+                        <p>Receive instant suggestions for improvements, keyword optimization, and formatting enhancements as you work on your resume.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI Assistance Section -->
+        <section id="ai-assistance" class="ai-section">
+            <div class="container">
+                <h2 class="section-heading">AI-Powered Resume Assistant</h2>
+                <p class="section-subtitle">Leverage cutting-edge artificial intelligence to optimize your resume for maximum impact. Our AI analyzes job descriptions and suggests improvements.</p>
+                
+                <div class="ai-features">
+                    <div class="ai-feature">
+                        <h4>Keyword Optimization</h4>
+                        <p>Automatically identify and suggest relevant keywords to help your resume pass ATS screening and get noticed by recruiters.</p>
+                    </div>
+                    
+                    <div class="ai-feature">
+                        <h4>Achievement Generator</h4>
+                        <p>Transform basic job duties into compelling achievement statements with quantifiable results that showcase your impact.</p>
+                    </div>
+                    
+                    <div class="ai-feature">
+                        <h4>Job Match Analysis</h4>
+                        <p>Compare your resume against job descriptions and get personalized suggestions for improvements and missing skills.</p>
+                    </div>
+                    
+                    <div class="ai-feature">
+                        <h4>Content Enhancement</h4>
+                        <p>Get AI-powered suggestions for better phrasing, stronger action verbs, and more impactful descriptions of your experience.</p>
+                    </div>
+                    
+                    <div class="ai-feature">
+                        <h4>Format Optimization</h4>
+                        <p>Ensure your resume format is ATS-friendly while maintaining visual appeal for human reviewers.</p>
+                    </div>
+                    
+                    <div class="ai-feature">
+                        <h4>Industry Customization</h4>
+                        <p>Tailor your resume content and style to match industry standards and expectations for your target roles.</p>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-8">
+                    <a href="#" class="btn btn-gradient">Try AI Assistant</a>
+                    <a href="#" class="btn btn-secondary">View Demo</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="features">
+            <div class="container">
+                <h2 class="section-heading">Ready to Get Started?</h2>
+                <p class="section-subtitle">Join thousands of professionals who have transformed their careers with Resume Revamp Track.</p>
+                
+                <div class="text-center mt-8">
+                    <a href="#" class="btn btn-primary">Start Your Resume</a>
+                    <a href="#" class="btn btn-secondary">Contact Support</a>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <script>
-        // Function to switch between tabs
-        function openTab(event, tabName) {
-            // Get all elements with class="tab-content" and hide them
-            const tabContents = document.querySelectorAll(".tab-content");
-            tabContents.forEach(content => {
-                content.classList.remove("active");
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Update active nav link on scroll
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                if (scrollY >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
             });
 
-            // Get all elements with class="tab-button" and remove 'active' class
-            const tabButtons = document.querySelectorAll(".tab-button");
-            tabButtons.forEach(button => {
-                button.classList.remove("active");
-                button.setAttribute("aria-selected", "false");
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
             });
+        });
 
-            // Show the current tab content
-            const currentTabContent = document.getElementById(tabName);
-            if (currentTabContent) {
-                currentTabContent.classList.add("active");
-            }
+        // Add fade-in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
 
-            // Add "active" class to the clicked button
-            if (event.currentTarget) {
-                event.currentTarget.classList.add("active");
-                event.currentTarget.setAttribute("aria-selected", "true");
-            }
-        }
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in-up');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.feature-card, .ai-feature').forEach(el => {
+            observer.observe(el);
+        });
     </script>
 </body>
 </html>
